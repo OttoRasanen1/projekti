@@ -5,7 +5,7 @@ public class peliScript : MonoBehaviour
 {
     public void jooGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
     public void eiGame()
     {
