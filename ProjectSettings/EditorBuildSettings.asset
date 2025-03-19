@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/peli.unity
     guid: e4e23a913d1efb549974c27fe9973012
+  - enabled: 1
+    path: Assets/Scenes/joo.unity
+    guid: 1662aef4c01a392499fbdd354b3e6032
+  - enabled: 1
+    path: Assets/Scenes/ei.unity
+    guid: 2cffae30162240e4695a3c38ac40a662
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
