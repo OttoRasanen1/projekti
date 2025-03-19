@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lopeta peli_0: 5570048370860822833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
