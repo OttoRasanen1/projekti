@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,13 +12,6 @@ public class animScript : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
-
-    }
-
-    //(Input.GetKeyDown(KeyCode.Space))
-    void Update()
-    {
-        // leave spin or jump to complete before changing
         if (anim.GetBool("HitAnim") == true)
         {
             return;
@@ -25,19 +19,19 @@ public class animScript : MonoBehaviour
 
         else
         {
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{ 
             anim.SetBool("HitAnim", true);
-            //}
+            StartCoroutine(ChangeScene(0.5f));
+            StartCoroutine(FindFirstObjectByType<hitScript>().playHitSound(0.6f));
+           
         }
-
     }
 
-        public void seuraavaGame()
-        {
-
+    private IEnumerator ChangeScene(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime + 1);
         SceneManager.LoadScene(3);
-        }
+    }
+   
 
 
     // have spin speed reverted to 1.0 second
@@ -46,7 +40,4 @@ public class animScript : MonoBehaviour
     //    anim["HitAnim"].speed = 1.0f;
     //    //HitAnim = false;
     //}
-
-
-    
 }
