@@ -31,15 +31,13 @@ public class animScript : MonoBehaviour
             //}
         }
 
-
+    }
 
         public void seuraavaGame()
-    {
+        {
 
-
-        WaitForSeconds(2);
         SceneManager.LoadScene(3);
-    }
+        }
 
 
     // have spin speed reverted to 1.0 second
@@ -50,5 +48,5 @@ public class animScript : MonoBehaviour
     //}
 
 
-}
+    
 }
